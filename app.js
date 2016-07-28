@@ -13,8 +13,8 @@ function sum(a,b){ //eslint-disable-line
   var message = 'The sum of ' + a + ' and ' + b + ' is ' + output + '.';
   // console.log('The sume of 4 and 7 is 11. is the expected message.');
   // console.log(message + 'is the actual output.');
-  return [output, message]
- }
+  return [output, message];
+};
 
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
@@ -31,12 +31,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a,b){ //eslint-disable-line
-var output = a * b;
-var message = 'The product of ' + a + ' and ' + b + ' is ' + output + '.';
+  var output = a * b;
+  var message = 'The product of ' + a + ' and ' + b + ' is ' + output + '.';
 // console.log('The product of 5 and 9 is 45. Is the expected message.');
 // console.log(message + 'is the actual output.');
-return [output, message]
-}
+  return [output, message];
+};
 
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(5,9);
@@ -55,19 +55,19 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
-var sumOne = sum(a,b)[0];
-var sumTwo = sum(c,sumOne)[0];
-var message1 = a + ' and ' + b + ' and ' + c + ' sum to ' + sumTwo + '.';
+  var sumOne = sum(a,b)[0];
+  var sumTwo = sum(c,sumOne)[0];
+  var message1 = a + ' and ' + b + ' and ' + c + ' sum to ' + sumTwo + '.';
 // console.log('4 and 7 and 5 sum to 16. Is the expected message.');
 // console.log(message1 + ' is the actual output.');
 
-var productOne = multiply(a,b)[0];
-var productTwo = multiply(c, productOne)[0];
-var message2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + productTwo + '.';
+  var productOne = multiply(a,b)[0];
+  var productTwo = multiply(c, productOne)[0];
+  var message2 = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + productTwo + '.';
 // console.log('The product of 4 and 7 and 5 is 140. Is the expected message.');
 // console.log(message2 + 'is the actual output.');
-return [sumTwo, message1, message2, productTwo]
-}
+  return [sumTwo, message1, message2, productTwo];
+};
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
@@ -88,11 +88,11 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2,3,4]; //eslint-disable-line
 
 function sumArray(testArray){ //eslint-disable-line
-var arrayTotal = sum(testArray[0], testArray[1])[0];
-var arrayTotal2 = sum(arrayTotal, testArray[2])[0];
-var message = (testArray + ' was passed in as an array of numbers, and ' + arrayTotal2 + ' is their sum.');
-return [arrayTotal2, message]
-}
+  var arrayTotal = sum(testArray[0], testArray[1])[0];
+  var arrayTotal2 = sum(arrayTotal, testArray[2])[0];
+  var message = (testArray + ' was passed in as an array of numbers, and ' + arrayTotal2 + ' is their sum.');
+  return [arrayTotal2, message];
+};
 
 // Here is the test for sumArray(); uncomment it to run it
 
@@ -112,11 +112,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-var arrayProduct = multiply(testArray[0], testArray[1])[0];
-var arrayProduct2 = multiply(arrayProduct, testArray[2])[0];
-var message = ('The numbers ' + testArray + ' have a product of ' + arrayProduct2 + '.');
-return [arrayProduct2, message]
-}
+  var arrayProduct = multiply(testArray[0], testArray[1])[0];
+  var arrayProduct2 = multiply(arrayProduct, testArray[2])[0];
+  var message = ('The numbers ' + testArray + ' have a product of ' + arrayProduct2 + '.');
+  return [arrayProduct2, message];
+};
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(2,3,4);
